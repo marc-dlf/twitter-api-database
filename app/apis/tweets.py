@@ -10,6 +10,7 @@ json_tweet = api.model('Tweet', {
     'created_at': fields.DateTime(required=True),
 })
 
+
 json_new_tweet = api.model('New tweet', {
     'text': fields.String(required=True, min_length=1),  # Don't allow empty string
 })
